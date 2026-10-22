@@ -1,0 +1,179 @@
+name: humming_bird
+description: A Scheduling  Messenger
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.7+12
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  # line_icons: ^2.0.3
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  smooth_page_indicator: ^1.0.0
+  pinput: ^3.0.1
+  flutter_svg: ^2.0.5
+  flutter_slidable: ^4.0.3
+  animated_toggle_switch: ^0.8.0
+  lite_rolling_switch: ^1.0.1
+  ionicons: ^0.2.2
+  animated_custom_dropdown: ^2.0.0
+  mask_text_input_formatter: ^2.6.0
+  intl_phone_field: ^3.2.0
+  switcher_button: ^0.0.4
+  google_fonts: ^8.1.0
+  curved_navigation_bar: ^1.0.3
+  anim_search_bar: ^2.0.3
+  modal_bottom_sheet: ^2.1.2
+  flutter_settings_screens: 
+  scratcher:
+  get: ^4.6.6
+  http:
+  intl: ^0.20.2
+  date_picker_timeline:
+  square_progress_indicator:
+  flutter_speed_dial:
+  animations: ^3.0.0
+  flutter_contacts: ^1.1.7+1
+  get_storage: ^2.1.1
+  image_cropper: ^12.2.1
+  image_picker: ^1.2.2
+  file_picker: ^11.0.2
+  dio: ^5.4.1
+  video_player: ^2.11.1
+  open_filex: ^4.7.0
+  flutter_pdfview: ^1.3.4
+  path_provider: ^2.1.5
+  socket_io_client: ^2.0.3+1
+  visibility_detector: ^0.4.0+2
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.9
+  url_launcher: ^6.3.2
+  url_launcher_android: ^6.3.30
+  animated_flip_counter: ^0.3.4
+  permission_handler: ^12.0.1
+  cached_network_image: ^3.3.1
+  audioplayers: ^6.0.0
+  just_audio: ^0.9.37
+  record: ^7.1.1
+  lottie: ^3.1.0
+  scrollable_positioned_list: ^0.3.8
+  flutter_screenutil: ^5.9.3
+  flutter_keyboard_visibility: ^6.0.0
+  flutter_local_notifications: ^17.2.2
+  share_plus: ^12.0.1
+  app_settings: ^5.1.1
+  archive: ^3.6.1
+  firebase_core: ^3.0.0
+  firebase_messaging: ^15.1.0
+  vibration: ^2.0.0
+  quick_actions: ^1.0.7
+  fluttertoast: ^9.1.0
+  emoji_picker_flutter: ^4.4.0
+  crypto: ^3.0.5
+  encrypt: ^5.0.3
+  convert: ^3.1.1
+  simple_rc4: ^0.3.0
+  xor_encryption: ^0.0.5
+  pointycastle: ^3.9.1
+  blowfish: ^1.0.2
+  cryptography: ^2.7.0
+  dart_des: ^1.0.2
+  logging_to_logcat: ^1.0.3
+  simple_barcode_scanner: ^0.6.0
+  connectivity_plus: ^6.0.5
+  flutter_background_service: ^5.1.0
+  smart_auth: ^1.1.1
+  flutter_webrtc: ^0.12.4
+  flutter_image_compress: ^2.5.1
+  geolocator: ^14.0.2
+  sensors_plus: ^6.0.1
+  timezone: ^0.9.4
+  flutter_timezone: ^4.0.1
+
+dependency_overrides:
+  objective_c: 9.4.0
+  intl: ^0.20.2
+  change_app_package_name: ^1.4.0
+
+  # dart run change_app_package_name:main com.chat.hummingbird
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  change_app_package_name: ^1.4.0
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^6.0.0
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/animations/
+    - assets/sounds/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
+
